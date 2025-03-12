@@ -44,8 +44,8 @@ const MixedChart = () => {
   useEffect(() => {
     if (selectedStore !== '') {
       const { labels, series } = transformDataForStore(selectedStore);
-      console.log('labels', labels);
-      console.log('series', series);
+      // console.log('labels', labels);
+      // console.log('series', series);
 
       // setStoreData({ labels, series });
 
