@@ -14,7 +14,6 @@ import { AppDispatch, RootState } from '../../../Store';
 
 // Project imports
 import AnimateButton from '../../../../src/components/@extended/AnimateButton';
-// import RHFTextField from '../../../react-hook-form/RhfTextfield';
 import FormProvider from '../../../react-hook-form/FormProvider';
 import { loginApiCall } from '../../../redux/authSlice';
 
