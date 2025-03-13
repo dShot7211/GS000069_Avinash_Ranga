@@ -28,6 +28,9 @@ const CommonDeleteDialog: React.FC<CommonConfirmDialogueProps> = ({ delFunc, id 
 
   const deleteRow = () => {
     dispatch(delFunc(id));
+    setTimeout(() => {
+      enqueueSnackbar('Deleted', { variant: 'success' });
+    }, 200);
   };
 
   return (

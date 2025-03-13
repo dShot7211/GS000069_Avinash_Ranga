@@ -30,9 +30,12 @@ Chart: Chart for showing GM Dollars and weeks . All the calculation parameters a
 Technical specification
 
 1. Page routing with `react router dom` with route restriction so only auth users can see the inner routes.
+
 2. State Management `Redux used` as state management for auth and all the other data as well
    for auth we have also encrypted the user details and stored it in localstorage.
+
 3. I have put in some sample data so that we can see the UI.
+
 4. The code modular and I have structured the code so that components, pages, and redux file are in seperate folders
 
 5. Repo has all our code in the src/ folder with nodemodules outside it and a gitnore file is present to ingore data that is not to be pushed. And our whole application starts with index.jsx
