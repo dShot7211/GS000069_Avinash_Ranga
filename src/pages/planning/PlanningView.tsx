@@ -11,7 +11,7 @@ const PlanningView = () => {
   } else {
     return (
       <Box component="main">
-        <Grid container sx={{ p: 1 }}>
+        <Grid container sx={{ p: 1.5 }}>
           <PlanningTable />
         </Grid>
       </Box>

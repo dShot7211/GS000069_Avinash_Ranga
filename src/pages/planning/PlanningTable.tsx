@@ -1,12 +1,13 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import { Box } from '@mui/material';
 import { ColDef, ColGroupDef } from 'ag-grid-enterprise';
-import { SALESDATA, SKU, STORES } from 'utils/constants';
+import { SKU } from 'utils/constants';
 import { useSelector } from 'react-redux';
 import { RootState } from 'Store';
+import styles from '../../components/ag-grid/InventoryExample.module.css';
 
 const generateCalendarColumns = () => {
   const columns: any = [];
@@ -143,20 +144,22 @@ const PlanningTable = () => {
     return [...baseColumns];
   }, []);
   return (
-    <Box className="ag-theme-alpine" style={{ height: 500, width: '100%' }}>
-      <AgGridReact
-        theme="legacy"
-        masterDetail
-        rowHeight={50}
-        rowData={planningRowData}
-        detailRowAutoHeight
-        columnDefs={columnDefs}
-        defaultColDef={{
-          resizable: true,
-          unSortIcon: true,
-          sortable: true
-        }}
-      />
+    <Box className="ag-theme-alpine" style={{ width: '100%' }}>
+      <div className={styles.container} style={{ height: 600, padding: '30px' }}>
+        <AgGridReact
+          theme="legacy"
+          masterDetail
+          rowHeight={50}
+          rowData={planningRowData}
+          detailRowAutoHeight
+          columnDefs={columnDefs}
+          defaultColDef={{
+            resizable: true,
+            unSortIcon: true,
+            sortable: true
+          }}
+        />
+      </div>
     </Box>
   );
 };
