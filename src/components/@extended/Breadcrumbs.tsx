@@ -9,7 +9,7 @@ import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 
 // project import
 import MainCard from 'components/MainCard';
-import logo from '../../../adventra_fav_icon.png';
+import logo from '../../../fav-icon.png';
 
 export default function Breadcrumbs({ navigation, title, ...others }: any) {
   // console.log('navigation', navigation);

@@ -36,3 +36,5 @@ Technical specification
 4. The code modular and I have structured the code so that components, pages, and redux file are in seperate folders
 
 5. Repo has all our code in the src/ folder with nodemodules outside it and a gitnore file is present to ingore data that is not to be pushed. And our whole application starts with index.jsx
+
+6. The Routes are created in routes/GsynergyRoutes.tsx
